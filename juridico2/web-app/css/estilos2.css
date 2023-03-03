@@ -1,0 +1,93 @@
+﻿body{
+	
+	margin:0 auto;
+	background: url(../images/fondo.jpg) top no-repeat;
+	font-family:Arial, Helvetica, sans-serif;
+}
+#contenedorCabecera{
+	width:100%;
+	height:100px;
+	padding-top: 40px;
+	margin-bottom: 10px;
+}
+
+#escudoOaxaca{
+	float:left;
+	width:245px;
+	height:87px;
+	background: url(../images/logotipo2-01.png)  left bottom no-repeat;
+	font-size: 17px;
+	font-family: Helvetica, sans-serif;
+	font-weight: bold;
+	margin-top: 12px;
+	margin-left: 35px;
+}
+#nombree{
+	float:left;
+	padding: 10px 10px 10px 10px;
+	font-family: Helvetica, sans-serif;
+	font-weight: bold;
+	margin-top: 12px;
+	font-size: 32px;
+	color: #865E35;
+
+}
+#gobiernoOaxaca{
+	float:center;
+	width:1174px;
+	height:130px;
+	background-image:url(../images/encabezado1.png);
+	background-repeat: no-repeat;
+	margin-left: 60px;
+}
+
+
+
+
+#contenedorPie {
+	width:100%;
+	padding-top:20px;
+	font-family: Verdana, Geneva, sans-serif;
+	font-size: 9px;
+	color:#9999a5;
+	text-align:center;
+	background-position:center;
+	background-position:top;
+}
+.pagination {
+	border-top: 0;
+	margin: 0;
+	padding: 0.3em 0.2em;
+	text-align: center;
+	   -moz-box-shadow: 0 0 3px 1px #AAAAAA;
+	-webkit-box-shadow: 0 0 3px 1px #AAAAAA;
+	        box-shadow: 0 0 3px 1px #AAAAAA;
+	background-color: #EFEFEF;
+}
+
+.pagination a,
+.pagination .currentStep {
+	color: #666666;
+	display: inline-block;
+	margin: 0 0.1em;
+	padding: 0.25em 0.7em;
+	text-decoration: none;
+	   -moz-border-radius: 0.3em;
+	-webkit-border-radius: 0.3em;
+	        border-radius: 0.3em;
+}
+
+.pagination a:hover, .pagination a:focus,
+.pagination .currentStep {
+	background-color: #999999;
+	color: #ffffff;
+	outline: none;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.8);
+}
+
+.no-borderradius .pagination a:hover, .no-borderradius .pagination a:focus,
+.no-borderradius .pagination .currentStep {
+	background-color: transparent;
+	color: #444444;
+	text-decoration: underline;
+}

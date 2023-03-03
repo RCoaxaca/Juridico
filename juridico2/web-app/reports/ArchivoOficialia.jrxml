@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reso" language="groovy" pageWidth="612" pageHeight="792" columnWidth="556" leftMargin="28" rightMargin="28" topMargin="28" bottomMargin="28" uuid="b3ef3179-020b-47ae-b1a9-e568f32a8e95">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="305"/>
+	<field name="exp" class="java.lang.String"/>
+	<field name="fecha" class="java.lang.String"/>
+	<field name="pa1" class="java.lang.String"/>
+	<field name="pa2" class="java.lang.String"/>
+	<field name="resolucion" class="java.lang.String"/>
+	<field name="expediente2" class="java.lang.String"/>
+	<field name="expediente" class="java.lang.String"/>
+	<field name="texto2" class="java.lang.String"/>
+	<field name="texto" class="java.lang.String"/>
+	<field name="boleta" class="java.lang.String"/>
+	<field name="encargado" class="java.lang.String"/>
+	<field name="encargadojuridico" class="java.lang.String"/>
+	<field name="copia1" class="java.lang.String"/>
+	<field name="copia2" class="java.lang.String"/>
+	<field name="copia3" class="java.lang.String"/>
+	<field name="oficialia" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="179">
+			<staticText>
+				<reportElement uuid="43770583-48d5-41b8-b5e3-1539663bbd24" x="196" y="0" width="204" height="27"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[DIRECCIÓN DEL REGISTRO CIVIL
+UNIDAD JURÍDICA
+]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="799ecd54-3d3e-47b3-a2ab-ab3b131ee193" x="400" y="0" width="156" height="27"/>
+				<imageExpression><![CDATA["codigo.png"]]></imageExpression>
+			</image>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="9763bbd0-b8c4-4968-9e45-d4f3f049751f" x="456" y="27" width="100" height="14" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{exp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="4db1df31-9b1e-4ebe-bc63-0de0c85499c7" x="327" y="36" width="229" height="14"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fecha}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="bfd22edd-5826-4f8f-8a8b-c8f315a143c6" isPrintRepeatedValues="false" mode="Transparent" x="0" y="50" width="556" height="128" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{copia1}]]></textFieldExpression>
+			</textField>
+			<break>
+				<reportElement uuid="4a151a00-e16d-4a3a-9f14-f4f86bcdd8c1" x="0" y="178" width="100" height="1"/>
+			</break>
+		</band>
+		<band height="137">
+			<staticText>
+				<reportElement uuid="0a14f8ab-02a4-47ae-897d-dc1ec9429b56" x="196" y="0" width="204" height="27"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[DIRECCIÓN DEL REGISTRO CIVIL
+UNIDAD JURÍDICA
+]]></text>
+			</staticText>
+			<image>
+				<reportElement uuid="76c89b6c-3d13-429f-b3da-38c642863cc2" x="400" y="0" width="156" height="27"/>
+				<imageExpression><![CDATA["codigo.png"]]></imageExpression>
+			</image>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="63af807a-24ac-46a0-b4e0-543e84aac9da" x="456" y="27" width="100" height="14" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{exp}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="2f48357b-83b1-4f74-8671-bf4b18ad6bc2" x="327" y="41" width="229" height="14"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fecha}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="dddd1542-a53a-4bc9-9cdb-f07c1a5032ea" isPrintRepeatedValues="false" mode="Transparent" x="0" y="55" width="556" height="81" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{copia2}]]></textFieldExpression>
+			</textField>
+			<break>
+				<reportElement uuid="a59cc9ab-cd2f-481b-a229-2fd26db70f77" x="0" y="136" width="100" height="1"/>
+			</break>
+		</band>
+		<band height="140">
+			<textField>
+				<reportElement uuid="eb3448af-a237-428c-9696-314a5304e100" x="337" y="43" width="229" height="14"/>
+				<textElement textAlignment="Right">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fecha}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="a62de451-f518-478b-b527-55f82f125fc2" isPrintRepeatedValues="false" mode="Transparent" x="0" y="58" width="556" height="82" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{copia3}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement uuid="43f82fa7-4608-4893-9838-acecf07db196" x="206" y="2" width="204" height="27"/>
+				<textElement textAlignment="Center">
+					<font size="10"/>
+				</textElement>
+				<text><![CDATA[DIRECCIÓN DEL REGISTRO CIVIL
+UNIDAD JURÍDICA
+]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement uuid="9728f7a9-34b5-41ac-aae5-7be4901d0d06" x="466" y="29" width="100" height="14" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{exp}]]></textFieldExpression>
+			</textField>
+			<image>
+				<reportElement uuid="bcdfc128-f816-40fe-952b-5985a4f70786" x="400" y="2" width="156" height="27"/>
+				<imageExpression><![CDATA["codigo.png"]]></imageExpression>
+			</image>
+		</band>
+		<band height="91">
+			<textField>
+				<reportElement uuid="5b2f2bb0-afa4-40f2-9587-0fdd7807e32d" x="0" y="1" width="556" height="19"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{expediente2}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="2ccbff8d-6827-4284-87eb-f4300867d29c" x="0" y="20" width="556" height="71" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{texto2}]]></textFieldExpression>
+			</textField>
+			<break>
+				<reportElement uuid="efde522e-833a-454b-a84f-98d85e9980ba" x="0" y="0" width="100" height="1"/>
+			</break>
+		</band>
+		<band height="72">
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="78717178-a0fd-40f5-b900-42575dbfd257" x="0" y="0" width="208" height="40" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{encargadojuridico}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="2d9eb968-e7ba-41d2-98c5-68a100603e85" x="0" y="50" width="556" height="22" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{boleta}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="4da6f303-1a63-468f-8843-db30a965a9ae" stretchType="RelativeToBandHeight" x="208" y="0" width="348" height="40" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Right">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{oficialia}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="90">
+			<break>
+				<reportElement uuid="0650b405-952b-4cb6-9b55-898a5db878d8" x="0" y="0" width="100" height="1"/>
+			</break>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="5aec8af9-f303-4fae-886b-2c3676bfb75c" x="0" y="20" width="556" height="70" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{texto}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="b4715bf5-d19d-4263-b7f3-2b8aed4771a9" x="0" y="1" width="500" height="20"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{expediente}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="75">
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="b01c1ddc-b034-45c5-9b72-6acf232ad252" x="0" y="53" width="556" height="22" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{boleta}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="e5fbc553-c5c7-4c75-9968-b7469154afcc" x="0" y="0" width="208" height="40" isPrintWhenDetailOverflows="true"/>
+				<textElement>
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{encargadojuridico}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement uuid="043d241f-3f43-4eb8-81bb-4d4fa41aea94" stretchType="RelativeToBandHeight" x="375" y="0" width="181" height="40" isPrintWhenDetailOverflows="true"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="9"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{encargado}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

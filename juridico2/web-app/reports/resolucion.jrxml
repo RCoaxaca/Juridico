@@ -1,0 +1,258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="resolucion" language="groovy" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="b5c78cea-7060-490d-8908-e22c3c35245c">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="144"/>
+	<field name="expediente" class="java.lang.String"/>
+	<field name="dia" class="java.lang.String"/>
+	<field name="mes" class="java.lang.String"/>
+	<field name="ann" class="java.lang.String"/>
+	<field name="dia2" class="java.lang.String"/>
+	<field name="mes2" class="java.lang.String"/>
+	<field name="ann2" class="java.lang.String"/>
+	<field name="interesado" class="java.lang.String"/>
+	<field name="acta" class="java.lang.String"/>
+	<field name="acta2" class="java.lang.String"/>
+	<field name="favorecido" class="java.lang.String"/>
+	<field name="lugar" class="java.lang.String"/>
+	<field name="dia3" class="java.lang.String"/>
+	<field name="mes3" class="java.lang.String"/>
+	<field name="ann3" class="java.lang.String"/>
+	<field name="promovio" class="java.lang.String"/>
+	<field name="expediente2" class="java.lang.String"/>
+	<field name="texto" class="java.lang.String"/>
+	<field name="erroracta" class="java.lang.String"/>
+	<field name="aclarados" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="24" splitType="Stretch">
+			<staticText>
+				<reportElement x="435" y="0" width="70" height="12" uuid="28c5ef3c-7f37-49a7-a504-0af59f7ee406"/>
+				<textElement textAlignment="Justified">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[EXPEDIENTE NO.:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="322" y="12" width="100" height="12" uuid="1051aca6-c108-4bb7-b6d5-22cbb15569fa"/>
+				<textElement textAlignment="Justified">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Oaxaca de Juárez, Oax., a ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="435" y="12" width="13" height="12" uuid="f90da27c-ac27-4577-90db-b527c63b1385"/>
+				<textElement textAlignment="Justified">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[de]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="505" y="12" width="11" height="12" uuid="100c9972-8a97-4981-b6f8-5981bfdd8b5b"/>
+				<textElement textAlignment="Justified">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[de]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="505" y="0" width="67" height="12" uuid="fe0a0ea0-d0cc-4c8f-8a87-00e53fec901e"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{expediente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="422" y="12" width="13" height="12" uuid="7b6f5f0e-6eaf-49b5-9b1b-73579cac7484"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dia}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="448" y="12" width="57" height="12" uuid="d266ce83-7f7a-46fc-aeaf-c58fd1ba9465"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mes}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="516" y="12" width="54" height="12" uuid="d87e1e45-170b-444f-b9ce-a985588c9e25"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ann}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="22" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="132" height="11" uuid="1e702669-e000-4f92-9f6a-4e570564539e"/>
+				<textElement textAlignment="Justified">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Visto el escrito presentado con fecha]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="151" y="0" width="10" height="11" uuid="33ac4a4d-bc31-4bee-aceb-7167298f8c9a"/>
+				<textElement textAlignment="Justified">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[de]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="218" y="0" width="10" height="11" uuid="ed5c6947-a08b-46ea-b65d-ef8728cf9328"/>
+				<textElement textAlignment="Justified">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[de]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="253" y="0" width="319" height="11" uuid="1e05f2c7-f702-4631-9b6d-6b6aaba72a08"/>
+				<textElement textAlignment="Justified">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[y la(s) copia(s) del Acta que contiene el(los) error(es) que se menciona(n), y demás documentos]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="11" width="153" height="11" uuid="96bcc7cb-9496-421f-84b7-49be4f54aec1"/>
+				<textElement textAlignment="Justified">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[documentos que se acompañan, se tiene a ]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="132" y="0" width="19" height="11" uuid="7d2cc0d6-cdef-4de6-a063-37a90cb942d0"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{dia2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="161" y="0" width="57" height="11" uuid="df27daba-77fe-435c-a3af-2ea25eec0dc9"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{mes2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="228" y="0" width="25" height="11" uuid="5353ebbe-d411-4be4-b7aa-e4ec920f705b"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ann2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="156" y="11" width="416" height="11" uuid="437ae559-287b-4bd3-ad25-42c89d796284"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{interesado}]]></textFieldExpression>
+			</textField>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="34" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="572" height="11" uuid="9b5f8f6c-2387-4961-8e61-a62fe28cfff5"/>
+				<textElement textAlignment="Justified">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Instaurado el procedimiento Administrativo de aclaración cuyo expediente se cita al rubro; previsto por los artículos 141 del Codigo Civil vigente en el Estado y]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="11" width="161" height="11" uuid="2996b48e-f89b-4de8-a875-e0b89cf7d6f0"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[26, 27 y 28 del Reglamento correspondiente.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="243" y="22" width="126" height="11" uuid="375bae4d-d9a4-4753-910e-205499dbf4f0"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[C O N S I D E R A N D O ]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="76" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="0" width="572" height="12" uuid="7db5d389-5120-4b88-a5b7-1f916a32abf4"/>
+				<textElement textAlignment="Justified">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[PRIMERO.- De conformidad con lo dispuesto por el Artículo 142 del Código Civil Vigente en el Estado, 26 y 30 del Reglamento  Interno del Registro Civil Vigente]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="12" width="369" height="11" uuid="94c6df59-babd-4ca8-a040-3ce6fde970ca"/>
+				<textElement textAlignment="Justified">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[en los que se faculta a estad Dirección a emitir las Resoluciones Administrativas de aclaración de acta.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="23" width="572" height="13" uuid="aede2778-65cc-40b5-b8af-80c9c0221f3d"/>
+				<textElement textAlignment="Justified">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[SEGUNDO.- En la especie, promovente solicita la aclaración del Acta mencionada, aduciendo que existen los siguientes errores:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="2" y="36" width="570" height="29" uuid="70bbcba0-84c5-44e7-8863-72d8a43b3ec6"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{erroracta}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="48" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="31" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="511" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="13" width="132" height="11" uuid="55f31940-f970-40e8-a1b7-046f0645fc94"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[SIGUIENTES INCONSISTENCIAS:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="485" y="0" width="100" height="13" uuid="52c9cd28-ad28-4305-b99d-979c40fe60b3"/>
+				<textElement textAlignment="Justified">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[SE OBSERVAN LAS]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="395" y="0" width="90" height="13" uuid="7b3231fe-773b-4816-a7ea-895cbc2d7a33"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{acta}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="2" y="24" width="568" height="487" isPrintWhenDetailOverflows="true" uuid="fc48d1bc-23e2-449e-9b6e-deb79392e725"/>
+				<textElement textAlignment="Justified">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{texto}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="0" width="395" height="13" uuid="9ecbe629-d220-40bf-bb29-cb89c9e96ce3"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[TERCERO.- CON BASE EN EL ANÁLISIS REALIZADO A LAS FOTOCOPIAS CERTIFICADAS DEL ACTA DE ]]></text>
+			</staticText>
+		</band>
+	</summary>
+</jasperReport>

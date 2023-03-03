@@ -1,0 +1,98 @@
+/* Propiedades del cuerpo */
+body{
+   background-color: #f9f6e1; background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f6e1), to(F6F4E5));
+   background-image: -webkit-linear-gradient(top, #f9f6e1, F6F4E5);
+   background-image: -moz-linear-gradient(top, #f9f6e1, F6F4E5);
+   background-image: -ms-linear-gradient(top, #f9f6e1, F6F4E5);
+   background-image: -o-linear-gradient(top, #f9f6e1, F6F4E5);
+   background-image: linear-gradient(to bottom, #f9f6e1, F6F4E5);
+   filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#f9f6e1, endColorstr=F6F4E5);
+}
+
+/* Fuente del titulo */
+h1, .h1 {
+   color:#A29954;
+   text-shadow: 0px 0px 15px #fff;
+}
+
+/* Propiedades de las pestañas */
+.nav-tabs > li > a{
+   border-color: #BCB898;
+   color: #A9A47E ;
+   background-color: #ffffff;
+}
+.nav-tabs, .nav-tabs > li > a{
+   border-bottom-color: white;
+}
+.panel-primary{
+   border-color: #BCB898;
+}
+.nav-tabs > li > a:hover {
+   background-color: #CBC8AA;
+   color: #fefefe;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+   background-color: #C8C4A4;
+   color: #fefefe;
+}
+
+/* Propiedades de los formularios */
+.form-horizontal .form-group{
+   padding: 0px;
+   margin-top: 0px;
+   margin-bottom: 10px;
+}
+.form-control:focus {
+   border-color: #ACA678;
+   webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(166, 159, 110, 0.6);
+   box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(166, 159, 110, 0.6);
+}
+
+/* Propiedades de las diviciones */
+.well-sm {
+   padding: 5px;
+}
+.well {
+   margin-top: 15px;
+   margin-bottom: 5px;
+}
+
+/* Propiedades de los botones*/
+.btn-primary{
+   background: #d60071;
+   border-color: #845629;
+}
+.btn-primary:hover{
+   background: #d60071;
+   border-color: #ACA678;
+}
+
+/* Propiedades de las alertas */
+.alert {
+   padding-top: 10px;
+   padding-bottom: 10px;
+   margin-bottom: 0px;
+}
+#alertaCrip{
+   margin: 10px;
+}
+
+#errorLogin{
+    padding: 10px;
+}
+
+/* Propiedades de los link*/
+a {
+  color: #865E35;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #845629;
+  text-decoration: underline;
+}
+
+textarea {
+resize:vertical;
+}

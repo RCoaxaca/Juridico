@@ -1,0 +1,2 @@
+<g:field name="exapro" type="number" value="${val2}" required=""/>
+<g:select id="error" name="error.id" from="${catalogos.Tcorrect.list()}" optionKey="id" value="${val}" class="many-to-one" noSelection="['null': '']"/>

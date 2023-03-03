@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reportedia" language="groovy" pageWidth="612" pageHeight="792" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="46475534-01ef-4a93-b7b8-b93db5cb42f5">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="fecha" class="java.lang.String"/>
+	<field name="expro" class="java.lang.String"/>
+	<field name="entrego" class="java.lang.String"/>
+	<field name="recibio" class="java.lang.String"/>
+	<field name="solicitante" class="java.lang.String"/>
+	<field name="interesado" class="java.lang.String"/>
+	<field name="estado" class="java.lang.String"/>
+	<field name="solicitud" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="67" splitType="Stretch">
+			<staticText>
+				<reportElement x="1" y="0" width="571" height="15" uuid="4a88bf19-e9e7-4627-a771-a10265d80606"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[DIRECCIÓN DEL REGISTRO CIVIL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="1" y="15" width="571" height="13" uuid="c30413db-df5a-49a2-ac00-9c85212c1f41"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[UNIDAD JURIDICA]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="280" y="51" width="292" height="16" uuid="dad2216f-9de7-4fd2-97e2-0312ad1ccf52"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fecha}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="34" width="572" height="17" uuid="caa88c40-05b2-451a-a579-2fd79d11d819"/>
+				<textElement textAlignment="Center">
+					<font size="8" isBold="true"/>
+				</textElement>
+				<text><![CDATA[REPORTE DE SOLICITUDES RECIBIDAS PARA ACLARACIÓN DE ACTA]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="25" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="8" width="53" height="15" uuid="282cf171-d8d3-4ade-886f-69e819d6e369"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[No. Exp]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="55" y="8" width="165" height="15" uuid="797860e0-a7d6-48a8-8a89-f7984bef228f"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Solicitate]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="223" y="8" width="165" height="15" uuid="6417005d-838e-4007-8395-315696eb5466"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Interesado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="391" y="8" width="100" height="15" uuid="9a62e0d2-1e7b-4f1d-9296-fca6877bb125"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[Estado]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="494" y="8" width="78" height="15" uuid="51e2a915-d9f6-4b3c-ad73-5571faaba40d"/>
+				<textElement textAlignment="Center"/>
+				<text><![CDATA[No. Solicitud]]></text>
+			</staticText>
+			<line>
+				<reportElement x="0" y="23" width="572" height="1" uuid="6978a4d1-947e-4113-97ac-2c9c87f0e9b8"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="0" y="7" width="572" height="1" uuid="fea61164-650b-487c-973b-6e05261be1c6"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="53" y="8" width="1" height="15" uuid="7b748492-9cbf-4e0e-9f82-9ad69cbbbbf5"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="221" y="8" width="1" height="15" uuid="22e1b1f7-9c72-45ab-8c62-444fdb352c87"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="389" y="8" width="1" height="15" uuid="4207b383-b6d5-4dcd-9cca-a961c34a89d3"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="492" y="8" width="1" height="15" uuid="0d804a9b-edd3-47b5-8e1c-707d43b6f724"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="21" splitType="Stretch">
+			<textField>
+				<reportElement x="55" y="1" width="165" height="20" uuid="006e94fa-3cc1-4b45-b8d9-37a471c83f24"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{solicitante}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="222" y="1" width="166" height="20" uuid="dd697a3d-977b-488d-93f7-974f7a23a792"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{interesado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="391" y="1" width="100" height="20" uuid="8afb1270-5c2f-430c-8eba-f73c9623a138"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{estado}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="494" y="1" width="78" height="20" uuid="29f2be06-6334-45ca-a56a-89ff6c6b72ee"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{solicitud}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="1" y="1" width="53" height="20" uuid="4de5daea-d0e5-4ed4-a710-6578ff921091"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle"/>
+				<textFieldExpression><![CDATA[$F{expro}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<summary>
+		<band height="78" splitType="Stretch">
+			<textField>
+				<reportElement x="10" y="39" width="193" height="20" uuid="356a7660-c0b0-4d03-bdb9-11b80c7ad190"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{entrego}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="10" y="59" width="193" height="15" uuid="1a5bcc47-5de0-4e97-86c5-f731fd9a118e"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[ENTREGÓ]]></text>
+			</staticText>
+			<textField isBlankWhenNull="true">
+				<reportElement x="361" y="39" width="180" height="20" uuid="8d927cb5-dbac-4488-94f1-229aa7d8f88f"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{recibio}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="361" y="59" width="180" height="15" uuid="58b1dd72-c29c-41b2-b529-6f188553a6d5"/>
+				<textElement textAlignment="Center">
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[RECIBIÓ]]></text>
+			</staticText>
+			<line>
+				<reportElement x="362" y="59" width="179" height="1" uuid="4c054ffc-3355-4c8e-a736-6cf7cb3ae693"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+			<line>
+				<reportElement x="10" y="59" width="193" height="1" uuid="03baf0ce-9787-4788-b782-d6f14bf894a8"/>
+				<graphicElement>
+					<pen lineWidth="0.5"/>
+				</graphicElement>
+			</line>
+		</band>
+	</summary>
+</jasperReport>

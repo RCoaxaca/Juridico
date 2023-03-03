@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="resolucion_negativa" language="groovy" pageWidth="595" pageHeight="842" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a89498e0-67f6-4042-8187-9516f221ff15">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="5"/>
+	<field name="numexpediente" class="java.lang.String"/>
+	<field name="promovente" class="java.lang.String"/>
+	<field name="textoneg" class="java.lang.String"/>
+	<field name="fecha" class="java.lang.String"/>
+	<field name="encargado" class="java.lang.String"/>
+	<field name="dic" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="69" splitType="Stretch">
+			<staticText>
+				<reportElement x="196" y="0" width="169" height="26" uuid="09ce33ea-fe2a-45d3-a0f4-240d48a0b2bf"/>
+				<text><![CDATA[DIRECCIÓN DEL REGISTRO CIVIL. UNIDAD JURIDICA.]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="345" y="26" width="100" height="14" uuid="033edc26-ac87-4da2-b7f5-5fc1ef61c503"/>
+				<text><![CDATA[EXPEDIENTE NUM.]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="445" y="26" width="110" height="14" uuid="d5328f83-a5c7-425c-9a38-2b9af5afd6f7"/>
+				<textFieldExpression><![CDATA[$F{numexpediente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="264" y="55" width="291" height="14" uuid="9e891425-c5b8-459a-ab91-9677c7ecac95"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{fecha}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="345" y="41" width="210" height="14" uuid="4461e704-3f19-4ef7-b53f-e9b977168229"/>
+				<text><![CDATA[RESOLUCION NEGATIVA DE ACLARACION]]></text>
+			</staticText>
+		</band>
+	</title>
+	<detail>
+		<band height="175">
+			<textField>
+				<reportElement x="0" y="0" width="287" height="14" uuid="25b2db69-64b3-408e-b027-561432124d66"/>
+				<textFieldExpression><![CDATA[$F{promovente}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="14" width="100" height="14" uuid="1880cea7-f9d4-466e-b7f9-3c6754bc8a41"/>
+				<text><![CDATA[P R E S E N T E]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="38" width="555" height="137" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" uuid="59c4e60e-2eb5-4aef-8a22-15eec08b7a4f"/>
+				<textElement textAlignment="Justified">
+					<font size="10"/>
+					<paragraph lineSpacing="1_1_2"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{textoneg}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="50">
+			<textField>
+				<reportElement x="196" y="0" width="169" height="50" isPrintWhenDetailOverflows="true" uuid="b3857d6a-c2cb-4efa-a47b-fc1c156aade4"/>
+				<textElement textAlignment="Center"/>
+				<textFieldExpression><![CDATA[$F{encargado}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="0" y="30" width="100" height="20" uuid="0580de12-9c60-4da1-9bf9-802d56fe6cf4"/>
+				<textFieldExpression><![CDATA[$F{dic}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

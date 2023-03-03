@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project xmlns='http://maven.apache.org/POM/4.0.0' xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xsi:schemaLocation='http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd'>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>org.grails.plugins</groupId>
+  <artifactId>richui</artifactId>
+  <packaging>zip</packaging>
+  <version>0.8</version>
+  <name>Provides a set of AJAX components</name>
+  <description>
+Provides a set of AJAX components
+</description>
+  <url>http://grails.org/plugin/richui</url>
+  <developers>
+        <developer>
+            <name>Andreas Schmitt</name>
+            <email>andreas.schmitt.mi@gmail.com</email>
+        </developer>
+  </developers>
+  
+</project>                    
+                                

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reso" language="groovy" pageWidth="612" pageHeight="792" columnWidth="556" leftMargin="28" rightMargin="28" topMargin="28" bottomMargin="28" uuid="b3ef3179-020b-47ae-b1a9-e568f32a8e95">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="exp" class="java.lang.String"/>
+	<field name="fecha" class="java.lang.String"/>
+	<field name="pa1" class="java.lang.String"/>
+	<field name="pa2" class="java.lang.String"/>
+	<field name="resolucion" class="java.lang.String"/>
+	<field name="expediente2" class="java.lang.String"/>
+	<field name="expediente" class="java.lang.String"/>
+	<field name="texto2" class="java.lang.String"/>
+	<field name="texto" class="java.lang.String"/>
+	<field name="boleta" class="java.lang.String"/>
+	<field name="encargado" class="java.lang.String"/>
+	<field name="encargadojuridico" class="java.lang.String"/>
+	<field name="copia1" class="java.lang.String"/>
+	<field name="copia2" class="java.lang.String"/>
+	<field name="copia3" class="java.lang.String"/>
+	<field name="oficialia" class="java.lang.String"/>
+	<title>
+		<band height="57">
+			<staticText>
+				<reportElement mode="Transparent" x="0" y="0" width="556" height="27" forecolor="#000000" backcolor="#FFFFFF" uuid="43770583-48d5-41b8-b5e3-1539663bbd24"/>
+				<textElement textAlignment="Center" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="Monospaced" size="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="C:\\8-PM.TTF" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[DIRECCIÓN DEL REGISTRO CIVIL
+UNIDAD JURÍDICA
+]]></text>
+			</staticText>
+			<image>
+				<reportElement x="400" y="0" width="156" height="27" uuid="799ecd54-3d3e-47b3-a2ab-ab3b131ee193"/>
+				<imageExpression><![CDATA["codigo.png"]]></imageExpression>
+			</image>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement mode="Transparent" x="0" y="27" width="556" height="14" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" forecolor="#000000" backcolor="#FFFFFF" uuid="9763bbd0-b8c4-4968-9e45-d4f3f049751f"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Monospaced" size="9" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="C:\\8-PM.TTF" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{exp}]]></textFieldExpression>
+			</textField>
+			<textField pattern="" isBlankWhenNull="true">
+				<reportElement mode="Transparent" x="0" y="41" width="556" height="14" forecolor="#000000" backcolor="#FFFFFF" uuid="4db1df31-9b1e-4ebe-bc63-0de0c85499c7"/>
+				<textElement textAlignment="Right" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="Monospaced" size="8" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="C:\\8-PM.TTF" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fecha}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="483" splitType="Stretch">
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="false">
+				<reportElement positionType="Float" mode="Transparent" x="0" y="0" width="556" height="483" isPrintWhenDetailOverflows="true" forecolor="#000000" backcolor="#FFFFFF" uuid="bfd22edd-5826-4f8f-8a8b-c8f315a143c6"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="8Pin Matrix" size="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="C:\\8-PM.TTF" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Proportional" lineSpacingSize="1.5"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{copia1}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

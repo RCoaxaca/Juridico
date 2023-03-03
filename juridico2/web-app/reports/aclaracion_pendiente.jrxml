@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="aclaracion_pendiente" language="groovy" pageWidth="612" pageHeight="792" columnWidth="500" leftMargin="56" rightMargin="56" topMargin="56" bottomMargin="56" uuid="6282bf91-010a-4b6b-97f0-1636e2f4a044">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="193"/>
+	<parameter name="parrafo1" class="java.lang.String"/>
+	<parameter name="parrafo2" class="java.lang.String"/>
+	<field name="parrafo1" class="java.lang.String"/>
+	<field name="parrafo2" class="java.lang.String"/>
+	<field name="expediente" class="java.lang.String"/>
+	<field name="fecha" class="java.lang.String"/>
+	<field name="parrafo3" class="java.lang.String"/>
+	<field name="parrafo4" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="70" splitType="Stretch">
+			<staticText>
+				<reportElement stretchType="RelativeToTallestObject" x="172" y="0" width="167" height="20" uuid="2ebc9a67-7126-4e59-a24e-62d599d7b126"/>
+				<text><![CDATA[DIRECCIÓN DEL REGISTRO CIVIL ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="207" y="20" width="93" height="20" uuid="012b1b7b-718c-47bc-bc7a-efa81efc72a8"/>
+				<text><![CDATA[UNIDAD JURÍDICA]]></text>
+			</staticText>
+			<image>
+				<reportElement x="0" y="0" width="62" height="70" uuid="62e5bdc4-4a84-4a56-8181-b7d0f2e29ac1"/>
+				<imageExpression><![CDATA["C:\\Users\\Gerard\\Documents\\NetBeansProjects\\unomass\\web-app\\reports\\logorc.jpg"]]></imageExpression>
+			</image>
+			<image>
+				<reportElement x="371" y="0" width="129" height="50" uuid="7a6c1aa3-9a56-4736-9f54-482be23ac1eb"/>
+				<imageExpression><![CDATA["C:\\Users\\Gerard\\Documents\\NetBeansProjects\\unomass\\web-app\\reports\\logotipo2-01.png"]]></imageExpression>
+			</image>
+		</band>
+	</title>
+	<summary>
+		<band height="377" splitType="Stretch">
+			<staticText>
+				<reportElement x="260" y="37" width="240" height="20" uuid="cb042627-2a2e-4c3a-9554-a063dca8b568"/>
+				<text><![CDATA[NOTIFICACIÓN DE PROYECTO DE ACLARACIÓN ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="105" width="100" height="20" uuid="1b3db726-a552-4da9-be61-779efad8dade"/>
+				<text><![CDATA[C. LUIS PEREZ RUIZ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="125" width="110" height="20" uuid="baf5241c-51f4-4b43-a36e-b504668f6fa7"/>
+				<text><![CDATA[P  R  E  S  E  N  T  E.]]></text>
+			</staticText>
+			<elementGroup>
+				<elementGroup/>
+			</elementGroup>
+			<textField>
+				<reportElement x="233" y="17" width="267" height="20" uuid="26c120fe-9cb3-4867-9010-018a9b02b48e"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{expediente}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="233" y="57" width="267" height="20" uuid="739c36df-6e8b-4eb0-9e8a-b3231ac72b52"/>
+				<textElement textAlignment="Right"/>
+				<textFieldExpression><![CDATA[$F{fecha}]]></textFieldExpression>
+			</textField>
+			<elementGroup>
+				<textField isStretchWithOverflow="true">
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="267" width="500" height="20" uuid="00a3acea-9b1a-49a2-9b63-85a31dc4d672"/>
+					<textFieldExpression><![CDATA[$F{parrafo3}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="174" width="500" height="20" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="31bd379d-6d75-449f-ade1-149fd783f998"/>
+					<textFieldExpression><![CDATA[$F{parrafo1}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement stretchType="RelativeToTallestObject" x="0" y="357" width="500" height="20" uuid="b6498216-ad7b-4f3a-854f-cd358de06477"/>
+					<textFieldExpression><![CDATA[$F{parrafo4}]]></textFieldExpression>
+				</textField>
+				<textField isStretchWithOverflow="true">
+					<reportElement stretchType="RelativeToBandHeight" x="0" y="225" width="500" height="20" isPrintWhenDetailOverflows="true" uuid="ecba88ff-fc8a-4a3d-aabe-6350d0f1f666"/>
+					<textFieldExpression><![CDATA[$F{parrafo2}]]></textFieldExpression>
+				</textField>
+			</elementGroup>
+		</band>
+	</summary>
+</jasperReport>

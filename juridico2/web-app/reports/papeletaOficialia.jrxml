@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="papeletas" language="groovy" pageWidth="612" pageHeight="792" columnWidth="572" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a9ee7d6d-e858-4edd-993f-cf8ecd72aae9">
+	<property name="ireport.zoom" value="1.1"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="texto" class="java.lang.String"/>
+	<field name="expediente" class="java.lang.String"/>
+	<field name="texto2" class="java.lang.String"/>
+	<field name="expediente2" class="java.lang.String"/>
+	<field name="encargado" class="java.lang.String"/>
+	<field name="encargadojuridico" class="java.lang.String"/>
+	<field name="boleta" class="java.lang.String"/>
+	<field name="barr" class="java.lang.String"/>
+	<detail>
+		<band height="238">
+			<textField>
+				<reportElement x="0" y="1" width="572" height="20" uuid="6e5ce4cc-017f-452e-8e21-ab6604d3e34f"/>
+				<textElement>
+					<font fontName="Arial" size="9" pdfFontName="C:\\8-PM.TTF" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{expediente2}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="21" width="572" height="217" isPrintWhenDetailOverflows="true" uuid="48acd448-4690-4824-9622-0b03ae11f8dc"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="9" pdfFontName="C:\\8-PM.TTF" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{texto2}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

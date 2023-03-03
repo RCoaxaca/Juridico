@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reso" language="groovy" pageWidth="612" pageHeight="792" columnWidth="556" leftMargin="28" rightMargin="28" topMargin="28" bottomMargin="28" uuid="b3ef3179-020b-47ae-b1a9-e568f32a8e95">
+	<property name="ireport.zoom" value="0.9330147604194666"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="exp" class="java.lang.String"/>
+	<field name="fecha" class="java.lang.String"/>
+	<field name="pa1" class="java.lang.String"/>
+	<field name="pa2" class="java.lang.String"/>
+	<field name="resolucion" class="java.lang.String"/>
+	<field name="expediente2" class="java.lang.String"/>
+	<field name="expediente" class="java.lang.String"/>
+	<field name="texto2" class="java.lang.String"/>
+	<field name="texto" class="java.lang.String"/>
+	<field name="boleta" class="java.lang.String"/>
+	<field name="encargado" class="java.lang.String"/>
+	<field name="encargadojuridico" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="47">
+			<staticText>
+				<reportElement x="-1" y="0" width="557" height="27" uuid="43770583-48d5-41b8-b5e3-1539663bbd24"/>
+				<textElement textAlignment="Center">
+					<font size="7" pdfFontName="C:\\8-PM.TTF" isPdfEmbedded="true"/>
+				</textElement>
+				<text><![CDATA[DIRECCIÓN DEL REGISTRO CIVIL
+UNIDAD JURÍDICA
+]]></text>
+			</staticText>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="34" width="556" height="12" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" uuid="34c83f8d-2626-415b-b6cf-dcaf1a866cce"/>
+				<textElement textAlignment="Right">
+					<font size="7" pdfFontName="C:\\8-PM.TTF" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fecha}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true" isBlankWhenNull="true">
+				<reportElement x="-1" y="22" width="557" height="14" isPrintInFirstWholeBand="true" isPrintWhenDetailOverflows="true" uuid="6ad64031-a629-42c7-bb05-81736a580f69"/>
+				<textElement textAlignment="Right">
+					<font size="8" pdfFontName="C:\\8-PM.TTF" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{exp}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<detail>
+		<band height="568">
+			<textField isStretchWithOverflow="true" pattern="" isBlankWhenNull="false">
+				<reportElement isPrintRepeatedValues="false" mode="Transparent" x="0" y="0" width="556" height="568" isPrintWhenDetailOverflows="true" forecolor="#000000" backcolor="#FFFFFF" uuid="bfd22edd-5826-4f8f-8a8b-c8f315a143c6"/>
+				<textElement textAlignment="Justified" verticalAlignment="Top" rotation="None" markup="none">
+					<font fontName="8Pin Matrix" size="7" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfFontName="C:\\8-PM.TTF" pdfEncoding="Cp1252" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Proportional" lineSpacingSize="1.3"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{pa2}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

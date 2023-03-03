@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="reso" language="groovy" pageWidth="612" pageHeight="419" columnWidth="556" leftMargin="28" rightMargin="28" topMargin="28" bottomMargin="28" uuid="b3ef3179-020b-47ae-b1a9-e568f32a8e95">
+	<property name="ireport.zoom" value="1.4615378250000008"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="exp" class="java.lang.String"/>
+	<field name="fecha" class="java.lang.String"/>
+	<field name="pa1" class="java.lang.String"/>
+	<field name="pa2" class="java.lang.String"/>
+	<field name="resolucion" class="java.lang.String"/>
+	<field name="expediente2" class="java.lang.String"/>
+	<field name="expediente" class="java.lang.String"/>
+	<field name="texto2" class="java.lang.String"/>
+	<field name="texto" class="java.lang.String"/>
+	<field name="boleta" class="java.lang.String"/>
+	<field name="encargado" class="java.lang.String"/>
+	<field name="encargadojuridico" class="java.lang.String"/>
+	<field name="oficialia" class="java.lang.String"/>
+	<field name="nombreoficialia" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="84">
+			<textField>
+				<reportElement x="0" y="0" width="161" height="27" uuid="5b2f2bb0-afa4-40f2-9587-0fdd7807e32d"/>
+				<textElement>
+					<font fontName="DialogInput" size="8" pdfFontName="C:\\8-PM.TTF" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{expediente}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement x="0" y="33" width="556" height="51" isPrintWhenDetailOverflows="true" uuid="2ccbff8d-6827-4284-87eb-f4300867d29c"/>
+				<textElement textAlignment="Justified" markup="none">
+					<font fontName="DialogInput" size="7" pdfFontName="C:\\8-PM.TTF" isPdfEmbedded="true"/>
+					<paragraph lineSpacing="Proportional" lineSpacingSize="1.0"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{texto}]]></textFieldExpression>
+			</textField>
+			<image hAlign="Right">
+				<reportElement x="400" y="0" width="156" height="27" uuid="07cea255-0dfa-48e5-8a1d-c91af9edc9a0"/>
+				<imageExpression><![CDATA["codigo.png"]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement x="129" y="0" width="311" height="27" uuid="1af234b3-c853-4ebb-a1da-6b7d87ca2c22"/>
+				<textElement textAlignment="Right">
+					<font size="7" pdfFontName="C:\\8-PM.TTF" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{nombreoficialia}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="44">
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="320" y="7" width="236" height="37" isPrintWhenDetailOverflows="true" uuid="b0659daf-9ddb-473c-88be-a7b818b53aa1"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="DialogInput" size="7" pdfFontName="C:\\8-PM.TTF" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{encargado}]]></textFieldExpression>
+			</textField>
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="0" y="7" width="360" height="37" isPrintWhenDetailOverflows="true" uuid="82c9d5d4-eaf2-4d0a-bf31-0b5ed47c2318"/>
+				<textElement>
+					<font fontName="DialogInput" size="7" pdfFontName="C:\\8-PM.TTF" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{encargadojuridico}]]></textFieldExpression>
+			</textField>
+		</band>
+		<band height="18">
+			<textField isStretchWithOverflow="true">
+				<reportElement positionType="Float" x="0" y="0" width="556" height="18" isPrintWhenDetailOverflows="true" uuid="70589493-7f33-4beb-a36c-3fca60204b65"/>
+				<textElement>
+					<font fontName="DialogInput" size="7" pdfFontName="C:\\8-PM.TTF" isPdfEmbedded="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{boleta}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>
